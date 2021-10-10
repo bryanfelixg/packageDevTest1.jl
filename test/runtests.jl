@@ -1,6 +1,6 @@
-using packageDevTest1
+using .packageDevTest1
 using Test
 
 @testset "packageDevTest1.jl" begin
-    # Write your tests here.
+    @test packageDevTest1.newton(sin,cos,0.01) ≈ 0
 end
